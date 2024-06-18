@@ -77,7 +77,7 @@ def update_fractal(event):
         y_min, y_max = ax.get_ylim()
 
         # Rigenera il frattale con i nuovi limiti
-        new_mandelbrot_colored = generate_mandelbrot(xres, yres, iterations, x_min, x_max, y_min, y_max)
+        new_mandelbrot_colored = generate_mandelbrot(xres, yres, iterations, x_min, x_max, y_max, y_min)
 
         # Aggiorna l'immagine visualizzata
         img.set_data(new_mandelbrot_colored)

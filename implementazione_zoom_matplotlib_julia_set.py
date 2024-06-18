@@ -56,7 +56,7 @@ xres, yres = 800, 600  # Ridotto per una visualizzazione più veloce
 iterations = 1000
 
 # Parametro c per il set di Julia (puoi cambiarlo per ottenere diverse forme)
-cx, cy = -0.7, 0.27015  # Modifica questi valori per ottenere diverse varianti del frattale di Julia
+cx, cy = -0.835, -0.2321  # Modifica questi valori per ottenere diverse varianti del frattale di Julia
 
 # Coordinate iniziali del piano complesso
 initial_x_min, initial_x_max = -2.0, 1.0
@@ -81,7 +81,7 @@ def update_fractal(event):
         y_min, y_max = ax.get_ylim()
 
         # Rigenera il frattale con i nuovi limiti
-        new_mandelbrot_colored = generate_julia(xres, yres, iterations, cx, cy, x_min, x_max, y_min, y_max)
+        new_mandelbrot_colored = generate_julia(xres, yres, iterations, cx, cy, x_min, x_max, y_max, y_min)
 
         # Aggiorna l'immagine visualizzata
         img.set_data(new_mandelbrot_colored)
