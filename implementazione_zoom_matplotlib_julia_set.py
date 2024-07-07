@@ -44,7 +44,7 @@ def generate_julia(xres, yres, iterations, cx, cy, x_min, x_max, y_min, y_max):
     mandelbrot_log = np.log(mandelbrot + 1) / np.log(iterations + 1)
 
     # Creazione della mappa di colori
-    colormap = plt.get_cmap("inferno")  # Puoi scegliere diverse mappe di colori da matplotlib
+    colormap = plt.get_cmap("viridis")  # Puoi scegliere diverse mappe di colori da matplotlib
 
     # Conversione dei valori normalizzati in colori usando la colormap
     mandelbrot_colored = (colormap(mandelbrot_log)[:, :, :3] * 255).astype(np.uint8)
@@ -56,7 +56,7 @@ xres, yres = 800, 600  # Ridotto per una visualizzazione più veloce
 iterations = 1000
 
 # Parametro c per il set di Julia (puoi cambiarlo per ottenere diverse forme)
-cx, cy = -0.835, -0.2321  # Modifica questi valori per ottenere diverse varianti del frattale di Julia
+cx, cy = 0.285,0.013  # Modifica questi valori per ottenere diverse varianti del frattale di Julia
 
 # Coordinate iniziali del piano complesso
 initial_x_min, initial_x_max = -2.0, 1.0

@@ -25,7 +25,7 @@ xres, yres = 12800, 9600  # Aumento della risoluzione
 iterations = 10000
 
 # Parametro c per il set di Julia (puoi cambiarlo per ottenere diverse forme)
-c = complex(-0.835, -0.2321)
+c = complex(0.285,0.013)
 
 # Allocazione della memoria per l'insieme di Julia
 mandelbrot = np.zeros((yres, xres), dtype=np.int32)
