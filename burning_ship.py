@@ -54,8 +54,8 @@ xres, yres = 12800, 9600  # Ridotto per una visualizzazione più veloce
 iterations = 10000
 
 # Coordinate iniziali del piano complesso
-x_min, x_max = -1.8, -1.7
-y_min, y_max = -0.08, 0.025
+x_min, x_max = -2.0, 1.0 # -1.8, -1.7
+y_min, y_max = -2.0, 2.0 # -0.08, 0.025
 
 # Generazione iniziale del frattale Burning Ship
 burningship_colored = generate_burningship(xres, yres, iterations, x_min, x_max, y_min, y_max)
