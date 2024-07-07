@@ -6,7 +6,7 @@ Questo che ho realizzato qua è un semplice script da me ideato per generare dei
 L'idea dietro i frattali generati è la seguenti: si considera una successione definita per ricorrenza del seguente tipo
 $$z_{n+1} = z_n^2 + c$$
 
-con $z_{n+1}, z_n, c \in \mathbb{C}$. Il comportamento dipende in particolar modo dalla costante $c$ considerata.
+con $z_{n+1}, z_n, c \in \mathbb{C}$. Il comportamento dipende in particolar modo dalla costante $c$ considerata: nel caso del set di Mandelbrot questa viene fatta variare per ogni punto del piano complesso, mentre nel caso del set di Julia la costante c è fissata. Per quanto riguarda il frattale BurningShip si considera il valore assoluto della parte reale e immaginaria del numero complesso nel momento in cui vengono effettuati i calcoli ma dal punto di vista di "costruzione" l'idea di base è sempre quella di fissare il valore della costante c. 
 Per ottimizzare i tempi ho utilizzato le funzionalità di CUDA e Numpy per velocizzare i calcoli.
 All'interno vi sono due script: il primo serve per generare il set di Mandelbrot (in cui $\forall z \in \mathbb{C}$ si fa variare la costante $c \in \mathbb{C}$), mentre con l'altro script è possibile andare a generare il set di Julia a $c$ costante, modificando opportunamente il codice
 
@@ -22,4 +22,5 @@ conda install cudatoolkit
 ![burning_ship](https://github.com/Fr4nci/frattali/blob/main/Immagini%20varie%20generate/immagine_zoom_burning_ship.png)
 
 ## Nota
-Per coloro che fossero interessati all'implementazione dello zoom, ho sostanzialmente utilizzanto gli _event_handler_ che la libreria matplotlib rende disponibili. Vedrete che le coordinate _y_max_ e _y_min_ nella generazione del nuovo frattale sono invertiti 
+Per coloro che fossero interessati all'implementazione dello zoom, ho sostanzialmente utilizzanto gli _event_handler_ che la libreria matplotlib rende disponibili. Vedrete che le coordinate _y_max_ e _y_min_ nella generazione del nuovo frattale sono invertiti.
+Ho provato anche a scrivere un programma equivalente usando però il linguaggio CUDA (C++ modificato in maniera proprietaria dall'azienda Nvidia per permettere il calcolo parallelo)
