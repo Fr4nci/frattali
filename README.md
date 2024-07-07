@@ -13,7 +13,7 @@ All'interno vi sono due script: il primo serve per generare il set di Mandelbrot
 ## Requirement
 Per funzionare questo script necessita la presenza della libreria _matplotlib_, _numpy_, _pillow_, _numba_ e necessita di tutti gli strumenti installabile tramite il comando
 ```bash
-conda install cudatoolking
+conda install cudatoolkit
 ```
 ## Nota
 Per coloro che fossero interessati all'implementazione dello zoom, ho sostanzialmente utilizzanto gli _event_handler_ che la libreria matplotlib rende disponibili. Vedrete che le coordinate _y_max_ e _y_min_ nella generazione del nuovo frattale sono invertiti 
