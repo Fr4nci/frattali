@@ -93,7 +93,7 @@ camera_position = Quaternion(0.0, -2.0, 0.25, 0.0)
 camera_position_vector = [Float32(camera_position.q0), Float32(camera_position.q1), Float32(camera_position.q2)]
 
 # Valore di c per il set di Julia
-c_value = Quaternion(0.20848, 0.0289175, -0.989516, 0.49807)
+c_value = Quaternion(-0.577406, 0.167387, -0.482833, 0.0)
 
 # Percorso per salvare le immagini
 image_path = "D:/Dati Windows/Documents/Frattali/"
