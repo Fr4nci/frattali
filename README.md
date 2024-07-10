@@ -23,7 +23,6 @@ conda install cudatoolkit
 ![julia_set](https://github.com/Fr4nci/frattali/blob/main/Immagini%20varie%20generate/julia_set.png)
 ![julia_set_2](https://github.com/Fr4nci/frattali/blob/main/Immagini%20varie%20generate/julia_colored.png)
 ![burning_ship](https://github.com/Fr4nci/frattali/blob/main/Immagini%20varie%20generate/immagine_zoom_burning_ship.png)
-![4d_julia](https://github.com/Fr4nci/frattali/blob/main/Frattali%20in%204D/frattale2_6.png)
 ![4d_julia_2](https://github.com/Fr4nci/frattali/blob/main/Frattali%20in%204D/frattale4_3.png)
 ![4d_julia_3](https://github.com/Fr4nci/frattali/blob/main/Frattali%20in%204D/frattale5_1.png) 
 
