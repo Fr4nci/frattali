@@ -1,7 +1,7 @@
 # Fractals: simple script for generating
 
 ## Introduction
-This one I made here is a simple script I designed to generate fractals. At the moment you have to intervene manually to change the type of fractal obtained, but still everything is fully functional. The idea behind the generated fractals is as follows: we consider a sequence defined by recurrence of the following type
+The scripts in these repo were made to generate various types of fractals. For now you have to intervene manually to change the type of fractal obtained, but still everything is fully functional. The idea behind the generated fractals is as follows: we consider a sequence defined by recurrence of the following type
 
 $$z_{n+1} = z_n^2 + c$$
 
