@@ -6,12 +6,12 @@ This one I made here is a simple script I designed to generate fractals. At the 
 The idea behind the generated fractals is as follows: we consider a sequence defined by recurrence of the following type
 $$z_{n+1} = z_n 2 + c$$
 
-with $z_{n+1}, z_n, c in mathbb{C}$. The behavior depends in particular on the constant $c$ considered: in the case of the set of Mandelbrot this is made to vary for every point of the complex plan, while in the case of the set of Julia the constant c is fixed. As for the BurningShip fractal, the absolute value of the real and imaginary part of the complex number is considered when the calculations are made, but from the point of view of "construction" the basic idea is always to fix the value of the constant c. 
+with $\forall n \in \mathbb{N}, z_n  \in \mathbb{C}$. The behavior depends in particular on the constant $c$ considered: in the case of the set of Mandelbrot this is made to vary for every point of the complex plan, while in the case of the set of Julia the constant c is fixed. As for the BurningShip fractal, the absolute value of the real and imaginary part of the complex number is considered when the calculations are made, but from the point of view of "construction" the basic idea is always to fix the value of the constant c. 
 To optimize the time I used the features of CUDA and Numpy to speed up the calculations.
-Inside there are two scripts: the first serves to generate the set of Mandelbrot (in which $ forall z in mathbb{C}$ you vary the constant $c in mathbb{C}$), while with the other script you can go to generate the set of Julia to $ c$ constant, by modifying the code accordingly.
-The logic remains equivalent even if you work in the set of $mathbb{H}$ (the set of quaternions where each element is defined by an uplift of 4 real numbers). However, the need arises to "convert" the image from 4D to 3D in some way through two methods
+Inside there are two scripts: the first serves to generate the set of Mandelbrot (in which $\forall z \in \mathbb{C}$ you vary the constant $\c \in \mathbb{C}$), while with the other script you can go to generate the set of Julia to $ c$ constant, by modifying the code accordingly.
+The logic remains equivalent even if you work in the set of $\mathbb{H}$ (the set of quaternions where each element is defined by an uplift of 4 real numbers). However, the need arises to "convert" the image from 4D to 3D in some way through two methods
 1) One dimension is "reset"
-2) This is done by projecting from a practically isomorphic space to $ mathbb{R} 4$ to an isomorphic space to $ mathbb{R} 3$
+2) This is done by projecting from a practically isomorphic space to $\mathbb{R}^4$ to an isomorphic space to $\mathbb{R}^3$
 For computational issues I preferred the first way, but at the moment I will not dwell on the mathematical details necessary to generate the image and, above all, implement in some way the distance between the fractal and the "camera" from which the scene is generated
 ## Requirement
 To work this script requires the presence of the library _matplotlib_, _numpy_, _pillow_, _numba_ and requires all the tools that can be installed via the command
