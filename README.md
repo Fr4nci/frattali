@@ -1,9 +1,8 @@
 # Fractals: simple script for generating
 
 ## Introduction
-This one I made here is a simple script I designed to generate fractals. At the moment you have to intervene manually to change the type of fractal obtained, but still everything is fully functional
+This one I made here is a simple script I designed to generate fractals. At the moment you have to intervene manually to change the type of fractal obtained, but still everything is fully functional. The idea behind the generated fractals is as follows: we consider a sequence defined by recurrence of the following type
 
-The idea behind the generated fractals is as follows: we consider a sequence defined by recurrence of the following type
 $$z_{n+1} = z_n 2 + c$$
 
 with $\forall n \in \mathbb{N}, z_n  \in \mathbb{C}$. The behavior depends in particular on the constant $c$ considered: in the case of the set of Mandelbrot this is made to vary for every point of the complex plan, while in the case of the set of Julia the constant c is fixed. As for the BurningShip fractal, the absolute value of the real and imaginary part of the complex number is considered when the calculations are made, but from the point of view of "construction" the basic idea is always to fix the value of the constant c. 
