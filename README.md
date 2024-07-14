@@ -1,4 +1,4 @@
-# Fractals: simple script for generating
+# Fractals: simple scripts for generating
 
 ## Introduction
 The scripts in these repo were made to generate various types of fractals. For now you have to intervene manually to change the type of fractal obtained, but still everything is fully functional. The idea behind the generated fractals is as follows: we consider a sequence defined by recurrence of the following type
