@@ -26,6 +26,5 @@ conda install cudatoolkit
 ![4d_julia_2](https://github.com/Fr4nci/frattali/blob/main/Frattali%20in%204D/frattale4_3.png)
 ![4d_julia_3](https://github.com/Fr4nci/frattali/blob/main/Frattali%20in%204D/frattale5_1.png) 
 
-# Note
 For those interested in the zoom implementation, I basically used the available matplotlib library. You will see that the coordinates _y_max_ and _y_min_ in the generation of the new fractal are reversed.
 I also tried to write an equivalent program using the CUDA language (C++ modified in a proprietary way by Nvidia to allow parallel computing)
