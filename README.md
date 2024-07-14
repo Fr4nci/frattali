@@ -14,7 +14,7 @@ The logic remains equivalent even if you work in the set of $\mathbb{H}$ (the se
 
 For computational issues I preferred the first way, but at the moment I will not dwell on the mathematical details necessary to generate the image and, above all, implement in some way the distance between the fractal and the "camera" from which the scene is generated
 ## Requirement
-To work this script requires the presence of the library _matplotlib_, _numpy_, _pillow_, _numba_ and requires all the tools that can be installed via the command
+To be functional this script requires the presence of the library _matplotlib_, _numpy_, _pillow_, _numba_ and requires all the tools that can be installed via the command
 ```bash
 conda install cudatoolkit
 ```
