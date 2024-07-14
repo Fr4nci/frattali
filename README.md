@@ -9,8 +9,8 @@ with $\forall n \in \mathbb{N}, z_n  \in \mathbb{C}$. The behavior depends in pa
 To optimize the time I used the features of CUDA and Numpy to speed up the calculations.
 Inside there are two scripts: the first serves to generate the set of Mandelbrot (in which $\forall z \in \mathbb{C}$ you vary the constant $c \in \mathbb{C}$), while with the other script you can go to generate the set of Julia to $ c$ constant, by modifying the code accordingly.
 The logic remains equivalent even if you work in the set of $\mathbb{H}$ (the set of quaternions where each element is defined by an uplift of 4 real numbers). However, the need arises to "convert" the image from 4D to 3D in some way through two methods
-1) One dimension is "reset"
-2) This is done by projecting from a practically isomorphic space to $\mathbb{R}^4$ to an isomorphic space to $\mathbb{R}^3$
+1) We simply remove a dimension by "forgetting" one when we plot 
+2) Otherwise by projecting from a practically isomorphic space to $\mathbb{R}^4$ to an isomorphic space to $\mathbb{R}^3$
 For computational issues I preferred the first way, but at the moment I will not dwell on the mathematical details necessary to generate the image and, above all, implement in some way the distance between the fractal and the "camera" from which the scene is generated
 ## Requirement
 To work this script requires the presence of the library _matplotlib_, _numpy_, _pillow_, _numba_ and requires all the tools that can be installed via the command
