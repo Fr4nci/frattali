@@ -5,8 +5,8 @@ from __future__ import print_function
 # operazioni su matrici di numeri complessi
 import numpy as np
 
-xres, yres = 6400, 4800
-iterations = 40
+xres, yres = 12800, 9600 
+iterations = 10000
 
 # cx e' una suddivisione dell'intervallo [-2,1] in xres punti
 cx = np.linspace(-2,1,xres)

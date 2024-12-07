@@ -47,7 +47,7 @@ mandelbrot_device.copy_to_host(mandelbrot)
 mandelbrot_log = np.log(mandelbrot + 1) / np.log(iterations + 1)
 
 # Creazione della mappa di colori
-colormap = plt.get_cmap("inferno")
+colormap = plt.get_cmap("grey")
 
 # Conversione dei valori normalizzati in colori usando la colormap
 mandelbrot_colored = (colormap(mandelbrot_log)[:, :, :3] * 255).astype(np.uint8)
