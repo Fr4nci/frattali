@@ -1,5 +1,6 @@
 from __future__ import print_function
 from numba import cuda
+import matplotlib
 import numpy as np
 from PIL import Image as im
 import matplotlib.pyplot as plt
