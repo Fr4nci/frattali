@@ -30,4 +30,7 @@ For those interested in the zoom implementation, I basically used the available 
 I also tried to write an equivalent program using the CUDA language (C++ modified in a proprietary way by Nvidia to allow parallel computing)
 
 # Double Pendulum fractal
+
+A particular fractal can be obtained by studying the double pendulum in the system's configuration space. The area at the 'center' corresponds to a region where the system eventually synchronizes, while the 'outside' is completely chaotic (trust me, even though I didn't compute the Lyapunov exponent, I found several articles regarding this). I found the fractal really beautiful, so I decided to recreate it without proving the chaotic nature or other factors.
+
 ![double_pendulum_fractal](https://github.com/Fr4nci/frattali/blob/main/DoublePendulum/violet_doublependulum.png)
